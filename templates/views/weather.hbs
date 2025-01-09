@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>headerlinks}}
+  </head>
+  <body>
+    {{>navbar}}
+    
+    <!-- main header -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 cd-12 mx-auto">
+           <div class="main_content">
+                <form class="temp_form">
+                    <input type="text" id="cityname" placeholder="Enter your city name" autocomplete="off">
+                    <input type="submit" value="Search" id="submitBtn">
+                </form>
+           </div>
+           <div class="tempInformation">
+                  <div class="top_layer">
+                    <p id="day">Monday</p>
+                    <p id="date"></p>
+                  </div>
+                  <div class="main_layer">
+                    <p id="city_name">Get Output</p>
+                    <div class="middle_layer data_hide">
+                        <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                        <p id="temp_status"><i class="fa fa-cloud"></i></p>
+                        
+                    </div>
+                  </div>
+           </div> 
+       
+           {{!-- <div class="box">
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+            <div id="weathercon" class="data_hide w">
+                <i class="fa-solid fa-sun fas"style="color:#eccc68;"></i>
+            </div>
+            <div class="info">
+                <p id="date">WED | OCT 23 | 10:49 Am</p>
+                <div class="main_layer">
+                        <p id="city_name">Get Output</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                            {{!-- <p id="temp_status"><i class="fa fa-cloud"></i></p> --}}
+                        </div>
+                
+            </div>
+          </div> --}} 
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+   {{>footer}}
+    <script src="js/main.js"></script>
+  </body>
+  
+</html>
+
+
+
